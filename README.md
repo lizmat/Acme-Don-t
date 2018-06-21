@@ -34,13 +34,15 @@ Note that the code in the `don't` block must be syntactically valid Perl. This i
 LIMITATIONS
 ===========
 
-  * *
+No opposite
+-----------
 
 Doesn't (yet) implement the opposite of `do STRING`. The current workaround is to use:
 
     don't {"filename"};
 
-  * *
+Double don'ts
+-------------
 
 The construct:
 
@@ -56,7 +58,8 @@ This is an issue of semantics. `don't...` doesn't mean `do the opposite of...`; 
 
 In other words, doin nothing about doing nothing does...nothing.
 
-  * * 
+Unless not
+----------
 
 You can't (yet) use a:
 
@@ -80,7 +83,7 @@ COPYRIGHT AND LICENSE
 
 Copyright 2018 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Original author: Damian Conway. Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

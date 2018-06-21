@@ -14,7 +14,10 @@
   },
   "resources" : [ ],
   "source-url" : "https://github.com/lizmat/Acme-Don-t.git",
-  "tags" : [ ],
+  "tags" : [
+    "CPAN5",
+    "ACME"
+  ],
   "test-depends" : [ ],
-  "version" : "0.0.1"
+  "version" : "0.0.2"
 }

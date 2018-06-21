@@ -1,6 +1,9 @@
 Revision history for Acme-Don't
 
 {{$NEXT}}
+    - Some pod fixes, mention Damian Conway
+    - Added another test
+    - Removed entry from .gitignore that is no longer needed
 
 0.0.1  2018-06-20T22:37:30-06:00
     - Initial version

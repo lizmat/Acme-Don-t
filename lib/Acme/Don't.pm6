@@ -1,8 +1,8 @@
 use v6.c;
 
-unit class Acme::Don't:ver<0.0.1>:auth<cpan:ELIZABETH>;
-
-sub don't(& --> Nil) is export { }
+module Acme::Don't:ver<0.0.2>:auth<cpan:ELIZABETH> {
+    sub don't(& --> Nil) is export { }
+}
 
 =begin pod
 
@@ -43,14 +43,14 @@ the security of compile-time syntax checking.
 
 =head1 LIMITATIONS
 
-=item *
+=head2 No opposite
 
 Doesn't (yet) implement the opposite of C<do STRING>. 
 The current workaround is to use:
 
     don't {"filename"};
 
-=item *
+=head2 Double don'ts
 
 The construct:
 
@@ -68,7 +68,7 @@ This is an issue of semantics. C<don't...> doesn't mean C<do the opposite of...>
 
 In other words, doin nothing about doing nothing does...nothing.
 
-=item * 
+=head2 Unless not
 
 You can't (yet) use a:
 
@@ -91,7 +91,8 @@ Pull Requests are welcome.
 
 Copyright 2018 Elizabeth Mattijsen
 
-Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
+Original author: Damian Conway.  Re-imagined from Perl 5 as part of the CPAN
+Butterfly Plan.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
