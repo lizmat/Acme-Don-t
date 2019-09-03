@@ -24,7 +24,7 @@ opposite of Perl's built-in C<do>.
 It is used exactly like the C<do BLOCK> function except that,
 instead of executing the block it controls, it...well...doesn't.
 
-Regardless of the contents of the block, C<don't> returns C<undef>.
+Regardless of the contents of the block, C<don't> returns C<Nil>.
 
 You can even write:
 
@@ -80,6 +80,11 @@ as a substitute for:
 
 Again, it's an issue of semantics. C<don't...unless...> doesn't mean C<do the opposite of...if...>; it means C<do nothing with...if not...>.
 
+=head2 PORTING CAVEATS
+
+Since Perl 6 doesn't have C<undef>, the closest thing to it (C<Nil>) is being
+returned by C<don't> instead.
+
 =head1 AUTHOR
 
 Elizabeth Mattijsen <liz@wenzperl.nl>
@@ -89,7 +94,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018-2019 Elizabeth Mattijsen
 
 Original author: Damian Conway.  Re-imagined from Perl 5 as part of the CPAN
 Butterfly Plan.
