@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lizmat/Acme-Don-t.svg?branch=master)](https://travis-ci.org/lizmat/Acme-Don-t)
+[![Actions Status](https://github.com/lizmat/Acme-Don-t/workflows/test/badge.svg)](https://github.com/lizmat/Acme-Don-t/actions)
 
 NAME
 ====
@@ -19,7 +19,7 @@ The Acme::Don't module provides a `don't` command, which is the opposite of Perl
 
 It is used exactly like the `do BLOCK` function except that, instead of executing the block it controls, it...well...doesn't.
 
-Regardless of the contents of the block, `don't` returns `undef`.
+Regardless of the contents of the block, `don't` returns `Nil`.
 
 You can even write:
 
@@ -71,17 +71,22 @@ as a substitute for:
 
 Again, it's an issue of semantics. `don't...unless...` doesn't mean `do the opposite of...if...`; it means `do nothing with...if not...`.
 
+PORTING CAVEATS
+---------------
+
+Since Perl 6 doesn't have `undef`, the closest thing to it (`Nil`) is being returned by `don't` instead.
+
 AUTHOR
 ======
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/Acme-don-t . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018 Elizabeth Mattijsen
+Copyright 2018, 2019, 2021 Elizabeth Mattijsen
 
 Original author: Damian Conway. Re-imagined from Perl 5 as part of the CPAN Butterfly Plan.
 

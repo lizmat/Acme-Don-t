@@ -1,6 +1,6 @@
-use v6.c;
+use v6.*;
 
-module Acme::Don't:ver<0.0.2>:auth<cpan:ELIZABETH> {
+module Acme::Don't:ver<0.0.3>:auth<zef:lizmat> {
     sub don't(& --> Nil) is export { }
 }
 
@@ -87,14 +87,14 @@ returned by C<don't> instead.
 
 =head1 AUTHOR
 
-Elizabeth Mattijsen <liz@wenzperl.nl>
+Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/Acme-don-t . Comments and
 Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018, 2019, 2021 Elizabeth Mattijsen
 
 Original author: Damian Conway.  Re-imagined from Perl 5 as part of the CPAN
 Butterfly Plan.
